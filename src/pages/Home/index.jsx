@@ -81,7 +81,7 @@ const Home = () => {
           <tr key={key} className="rowAction">
             <td>{val._id}</td>
             <td>{val.name}</td>
-            <td className="text-center">{val.price}</td>
+            <td className="text-center">{`Rp. ${val.price.toLocaleString("id-ID")}`}</td>
             <td className="text-center">{val.stock}</td>
             <td className="text-center">
               <img className='imageView' src={imageURL + val.image_url} alt=" " />
